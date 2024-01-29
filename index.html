@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Yummy</title>
+    <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body cz-shortcut-listen="true" style="overflow: visible;">
+    <main>
+
+        <div class="loadScreen  top-0 start-0 end-0 bottom-0 bg-dark-subtle " style="display: none;">
+            <i class="fa fa-spinner fa-spin fa-5x"></i>
+        </div>
+    
+        <div class="sideNavMenu vh-100 position-fixed " >
+            <div class="navvTab flex-column vh-100 p-3">
+                <div class="links">
+                    <ul class="list-unstyled overflow-hidden">
+                        <li onclick="showSearchInputs(); closeMenu()" class="paj py-2" style="top: 300px;">Search</li>
+                        <li onclick="getCategoriesList(); closeMenu()" class="paj  py-2" style="top: 300px;">Categories</li>
+                        <li onclick="getAreaList(); closeMenu()" class="paj py-2" style="top: 300px;">Area</li>
+                        <li onclick="getIngredientsList(); closeMenu()" class="paj py-2" style="top: 300px;">Ingredients</li>
+                        <li onclick="showContacts(); closeMenu()" class="paj py-2" style="top: 300px;">Contact Us</li>
+                    </ul>
+                </div>
+                <div class="nav-footer">
+                    <div class="icons">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div class="footer">
+                        <p>Copyright Â© 2024 All Rights <br>Be Happy.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="navheader  py-4 text-center px-2 bg-white  flex-column text-black">
+                <img class="sitelogo" src="imgs/logo.png" alt="" srcset="">
+                <i class="fa-solid openCloseIcon fa-align-justify fa-2x"></i>
+                <div>
+                    <i class="fa-solid fa-globe d-block"></i>
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container w-75" id="sercContainer">
+    
+        </div>
+    
+        <div class=" vh-100 position-relative">
+            <div class="innerLoadingScreen top-0 start-0 end-0 bottom-0 justify-content-center align-items-center" style="display: none;">
+                <i class="fa fa-spinner fa-spin fa-5x"></i>
+            </div>
+    
+            <div class="container">
+                <div class="row py-5 g-4 " id="rowData">
+                
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

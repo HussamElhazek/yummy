@@ -1,0 +1,94 @@
+body {
+    background-color: #f9f6f6;
+    color: #0d0d0d;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.navvTab {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0d0d0d;
+    color: #f9f6f6;
+    font-family: Arial, sans-serif;
+}
+
+.navheader {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.sideNavMenu{
+    display: flex;
+    top: 0rem;
+    left: -255px;
+    z-index: 99;
+}
+
+
+.sitelogo {
+    width: 4.0625rem;
+}
+
+i {
+    cursor: pointer;
+}
+
+.links {
+    * {
+      
+        text-decoration: none;
+        list-style: none;
+      }
+}
+
+.innerLoadingScreen {
+    position: absolute;
+    z-index: 9;
+    background-color: #910a0a;
+    display: flex;
+    
+}
+
+.mealsLayer {
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    background-color: rgba(249, 246, 246, 0.79);
+    transition: .7s;
+    font-family: Arial, sans-serif;
+}
+
+.meal:hover .mealsLayer {
+    top: 0;
+}
+
+
+.form-control::placeholder {
+    color: #0c0101f1;
+    opacity: 0.6;
+}
+
+.paj {
+    position: relative;
+    cursor: pointer;
+    top: 18.75rem;
+}
+
+.alert {
+    width: fit-content;
+}
+
+.loadScreen {
+    z-index: 999;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+}
+
